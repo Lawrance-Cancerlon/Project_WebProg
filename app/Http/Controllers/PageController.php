@@ -18,7 +18,12 @@ class PageController extends Controller
 
     public function home()
     {
-        $categories = Category::all();
+
+
+    
+        $categories = Category::cursor()->filter(function (Category $c) {
+            return true;
+        });
         return view('home', compact('categories'));
     }
 

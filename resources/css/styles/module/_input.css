@@ -1,0 +1,8 @@
+
+
+.input {
+    @apply bg-surface-container text-on-surface py-4 px-8 rounded-lg
+    focus:bg-surface focus:text-on-surface focus:shadow-lg;
+
+    display: inline-block
+}

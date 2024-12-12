@@ -1,0 +1,15 @@
+.btn {
+    @apply bg-primary text-on-primary py-4 px-8 rounded-full
+     hover:shadow-lg;
+}
+
+.btn-primary-light {
+    @apply bg-primary-container text-on-primary-container
+}
+
+.btn-outline {
+    @apply border border-primary text-primary py-4 px-8 rounded-full
+    hover:bg-primary hover:text-on-primary hover:shadow-lg;
+    background-color: transparent;
+}
+

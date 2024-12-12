@@ -1,0 +1,5 @@
+.brand-logo {
+    background-image: url('/storage/assets/brand_logo.png');
+    background-size: contain;
+    display: block;
+}

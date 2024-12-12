@@ -1,0 +1,22 @@
+.nav {
+    @apply px-8 py-4
+    flex flex-row justify-between items-center 
+    rounded-lg shadow-lg sticky z-10 overflow-hidden;
+
+    background-color: var(--color-surface);
+    top: 0px;
+}
+
+.nav .nav-link {
+
+}
+
+.nav .active {
+    padding: .5rem 1rem;
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.nav .nav-brand {
+
+}

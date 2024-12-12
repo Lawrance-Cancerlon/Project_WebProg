@@ -31,16 +31,16 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $categories = [
-            'Computer Programming and Networking',
-            'Creative Writing',
-            'Graphics and Design',
-            'Virtual Assistants',
-            'Music & Audio',
-            'Digital Marketing',
-            'Other'
+            ['Computer Programming and Networking', 'computer'],
+            ['Creative Writing', 'edit_note'],
+            ['Graphics and Design', 'design_services'],
+            ['Virtual Assistants', 'person_apron'],
+            ['Music & Audio', 'discover_tune'],
+            ['Digital Marketing', 'storefront'],
+            ['Other', 'dynamic_feed']
         ];
         foreach ($categories as $category) {
-            Category::create(['name' => $category]);
+            Category::create(['name' => $category[0], 'image' => $category[1]]);
         }
     }
 }
