@@ -22,7 +22,9 @@
 
     <script src="assets/script.js" type="module"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000
+        });
       </script>
 </body>
 </html>

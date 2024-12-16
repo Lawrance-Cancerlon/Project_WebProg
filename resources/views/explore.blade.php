@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="flex flex-col items-center">
-      
+
     </div>
 
     <div class="flex items-center justify-center h-full p-8">
@@ -14,9 +14,9 @@
                 <h1 class="text-8xl text-surface">
                     Telusuri jasa yang kamu inginkan
                 </h1>
-                <form action="/explore" method="get" class="flex flex-row w-full max-w-md mb-4 gap-4">
-                    <input type="text" name="search" id="search" class="input w-full rounded-l-md" placeholder="Cari pekerjaan jasa..." value="{{$search ? $search : ''}}">
-                    <button type="submit" class="btn btn-primary rounded-r-md bg-blue-500 text-white px-4 py-2">
+                <form action="/explore" method="get" class="flex flex-row ">
+                    <input type="text" name="search" id="search" class="input rounded-none rounded-tl-lg rounded-bl-lg" placeholder="Cari pekerjaan jasa..." value="{{$search ? $search : ''}}">
+                    <button type="submit" class="btn btn-primary rounded-none rounded-br-lg rounded-tr-lg bg-blue-500 text-white px-4 py-2">
                         Cari
                     </button>
                 </form>

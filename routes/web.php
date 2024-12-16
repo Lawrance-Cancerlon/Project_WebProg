@@ -4,6 +4,8 @@ use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SellerController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'index']);
@@ -20,3 +22,8 @@ Route::post('/register', [UserController::class, 'createUser'])->middleware('gue
 Route::get('/portfolio', [PageController::class, 'portfolio'])->middleware('auth');
 Route::get('/services', [PageController::class, 'service']);
 Route::get('/profile', [PageController::class, 'profile'])->middleware('auth');
+
+Route::prefix('seller')->group( function() {
+    Route::get('/', [SellerController::class, 'index']);
+    Route::get('/home', [SellerController::class, 'home']);
+});

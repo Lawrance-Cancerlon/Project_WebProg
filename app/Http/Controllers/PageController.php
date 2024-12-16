@@ -18,13 +18,11 @@ class PageController extends Controller
 
     public function home()
     {
-
-
     
         $categories = Category::cursor()->filter(function (Category $c) {
             return true;
         });
-        return view('home', compact('categories'));
+        return view('home', compact(['categories']));
     }
 
     public function post()

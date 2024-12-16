@@ -1,6 +1,7 @@
 .btn {
     @apply bg-primary text-on-primary py-4 px-8 rounded-full
      hover:shadow-lg;
+     display: inline-block;
 }
 
 .btn-primary-light {
