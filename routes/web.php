@@ -5,6 +5,8 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SellerController;
+use App\Http\Controllers\PortfolioController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -23,7 +25,14 @@ Route::get('/portfolio', [PageController::class, 'portfolio'])->middleware('auth
 Route::get('/services', [PageController::class, 'service']);
 Route::get('/profile', [PageController::class, 'profile'])->middleware('auth');
 
-Route::prefix('seller')->group( function() {
-    Route::get('/', [SellerController::class, 'index']);
-    Route::get('/home', [SellerController::class, 'home']);
+Route::prefix('seller')->name('seller.')->group( function() {
+    Route::get('/', [SellerController::class, 'index'])->name("index");
+    Route::get('/home', [SellerController::class, 'home'])->name("home");
+    Route::get('/profile', [SellerController::class, 'profile'])->name('profile');
+    
+    Route::prefix("portfolio")->name('portfolio.')->group( function() {
+        Route::get('/', [PortfolioController::class, 'index'])->name('index');
+
+    });
+    
 });

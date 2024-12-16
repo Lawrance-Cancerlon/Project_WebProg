@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use App\Models\Application;
+use App\Models\Category;
+use App\Models\Service;
+use App\Models\User;
+
 class SellerController extends Controller
 {
     /**
@@ -20,7 +25,23 @@ class SellerController extends Controller
         }
     }
 
+    /**
+     * Route "seller/home" handler
+     * @return view
+     */
     public function home() {
-        return view('seller.home');
+
+        $applications = Application::whereHas('service', function ($query) {
+            $query->where('user_id', Auth::user()->id);
+        })->get();
+
+        return view('seller.home', compact("applications"));
+    }
+
+    public function portfolio() {
+        $applications = Application::whereHas('service', function ($query) {
+            $query->where('user_id', Auth::user()->id);
+        })->get();
+        return view('seller.portfolio', compact("applications"));
     }
 }

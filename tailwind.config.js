@@ -65,6 +65,7 @@ export default {
             'surface-container': 'rgb(238 237 244)',
             'surface-container-high': 'rgb(232 231 239)',
             'surface-container-highest': 'rgb(226 226 233)',
+            'transparent': 'rgba(255 0 0 0)'
         }
     },
     plugins: [],

@@ -5,7 +5,7 @@
 @extends('app')
 
 @section('navbar')
-    @include('components.navbar', ['page' => 'portfolio'])
+    @include('seller.navbar', ['page' => 'portfolio'])
 @endsection
 
 @section('content')
@@ -50,8 +50,6 @@
         </div>
 
     </div>
-    <div class="text-secondary text-xl">
-        Kamu cari pesanan klien mu? Yuk pindah ke <a class="link" href="{{ route('seller.index') }}">halaman seller</a> yuk :D</div>
 
 
 </div>
