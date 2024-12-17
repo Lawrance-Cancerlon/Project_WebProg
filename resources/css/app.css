@@ -6,7 +6,3 @@
 
 
 
-.input-control {
-    @apply mt-1 block w-full px-3 py-2 border border-outline rounded-md shadow-sm focus:outline-none focus:ring-primary
-    focus:border-outline-variant
-}

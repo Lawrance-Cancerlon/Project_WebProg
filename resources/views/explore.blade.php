@@ -10,8 +10,9 @@
     </div>
 
     <div class="flex items-center justify-center h-full p-8">
-        <div class="w-full h-full rounded-lg flex flex-col justify-center items-center gap-8 py-20" id="banner" style="background-image: url('storage/assets/home_banner.png'); background-size: cover;">
-                <h1 class="text-8xl text-surface">
+        <div data-aos="fade-up"
+        class="w-full h-full rounded-lg flex flex-col justify-center items-center gap-8 py-20" id="banner" style="background-image: url('storage/assets/home_banner.png'); background-size: cover;">
+                <h1 class="text-8xl text-center text-surface">
                     Telusuri jasa yang kamu inginkan
                 </h1>
                 <form action="/explore" method="get" class="flex flex-row ">
@@ -26,8 +27,9 @@
 
 
     <div class="bg-surface-container grid grid-cols-1 md:grid-cols-3 gap-4 p-8">
-        @forelse ($services as $service)
-            <div class="bg-surface shadow-md rounded-lg overflow-hidden">
+        @forelse ($services as $index => $service)
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{ $index * 100 }}"  
+            class="bg-surface shadow-md rounded-lg overflow-hidden">
                 <div class="flex flex-col p-8 gap-4 items-start">
                     <h5 class="text-4xl text-on-surface font-bold">{{ $service->title }}</h5>
                     <h6 class="text-on-surface-variant text-md">{{ $service->category()->first()->name }}</h6>

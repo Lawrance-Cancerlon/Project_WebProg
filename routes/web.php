@@ -32,7 +32,9 @@ Route::prefix('seller')->name('seller.')->group( function() {
     
     Route::prefix("portfolio")->name('portfolio.')->group( function() {
         Route::get('/', [PortfolioController::class, 'index'])->name('index');
-
+        Route::get('/pesanan', [PortfolioController::class, 'pesanan'])->name('pesanan');
+        Route::get("/services", [PortfolioController::class, "services"])->name("services");
+        Route::post("/services", [ServiceController::class, "createService"])->name("services.create");
     });
     
 });

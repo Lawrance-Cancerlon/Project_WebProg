@@ -1,6 +1,6 @@
-@extends('seller.portfolio.layout')
+@extends('seller.portfolio.layout', ['subpage' => 'index'])
 
-@section("content")
+@section("subcontent")
 
 
 @endsection

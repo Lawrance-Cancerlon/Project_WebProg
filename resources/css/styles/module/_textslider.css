@@ -1,0 +1,14 @@
+@keyframes slide-text {
+    0% { transform: translateY(0%); }              /* First word */
+    20% { transform: translateY(-100%); }          /* Second word */
+    40% { transform: translateY(-200%); }          /* Third word */
+    60% { transform: translateY(-300%); }          /* Fourth word */
+    80% { transform: translateY(-400%); }          /* Duplicate first word */
+    100% { transform: translateY(-400%); }         /* Stay at duplicate for loop */
+}
+.animate-slide-text {
+    animation: slide-text 8s infinite ease-in-out;
+    display: block;
+    line-height: 1em;
+    height: 1em;
+}

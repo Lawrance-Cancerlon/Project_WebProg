@@ -49,7 +49,7 @@
     <div class="flex flex-col items-start gap-8 text-on-surface mb-8">
         <h2 class="text-4xl font-light" data-aos="fade-left" data-aos-delay="500">Sedang populer di Kartina.</h2>
 
-    </div>
+</div>
 
 </div>
 
@@ -62,7 +62,7 @@
     <div class="flex items-center justify-center h-full p-8">
         <div class="banner justify-center items-center gap-8 py-40"
         data-aos="fade-up" id="banner" style="background-image: url('storage/assets/home_banner.png'); background-size: cover;">
-                <h1 class="text-8xl text-surface">
+                <h1 class="text-8xl text-center text-surface">
                     Bakat dan talenta untuk usaha kamu
                 </h1>
                 <form action="/explore" method="get" class="flex flex-row gap-4">

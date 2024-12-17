@@ -22,7 +22,7 @@ class ApplicationController extends Controller
             'description' => $request->description,
             'status' => 'pending',
         ]);
-        return redirect('/home');
+        return redirect('/portfolio');
     }
 
     public function updateApplication(Request $request)

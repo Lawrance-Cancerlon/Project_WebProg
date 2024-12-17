@@ -1,0 +1,17 @@
+.card-service {
+    @apply p-0 rounded-lg shadow
+    flex flex-col items-start;
+}
+
+.card-service .thumbnail {
+    background-size: cover;
+    @apply block;
+}
+
+.card-service .card-body {
+    @apply p-8 flex flex-col;
+}
+
+.card-service .card-footer {
+
+}

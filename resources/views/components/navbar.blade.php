@@ -18,7 +18,7 @@
                         @isset($user)
                             <img class="rounded-full w-10"
                             src={{ $avatar }}>
-                            <span>{{$user->name}}</span>
+                            <span class="pe-4">{{$user->name}}</span>
                         @endisset
                     </div>
                     

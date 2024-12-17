@@ -17,6 +17,7 @@ class Service extends Model
         'title',
         'description',
         'salary',
+        'image'
     ];
 
     protected $hidden = [

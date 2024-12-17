@@ -54,6 +54,7 @@ class UserController extends Controller
                 'password' => 'Kata sandi yang diberikan tidak sesuai',
             ]);
         }
+        return redirect()->intended('/');
     }
 
     public function logout()

@@ -6,3 +6,8 @@
 
     display: inline-block
 }
+
+.form-input {
+    @apply box-border my-4 block w-full p-4 outline outline-1 outline-outline rounded shadow-sm focus:outline-none focus:ring-primary
+    focus:border-0 focus:outline-4 focus:outline-primary-container focus:rounded-lg
+}
