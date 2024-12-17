@@ -42,4 +42,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Application::class);
     }
+
+    public function getAvatar() {
+        $name = $this->getAttribute("name");
+        return "https://avatar.oxro.io/avatar.svg?name=" . $name
+            . "&caps=3";
+    }
 }

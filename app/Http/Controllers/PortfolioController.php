@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Application;
 use App\Models\Category;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -20,7 +21,10 @@ class PortfolioController extends Controller
      * page handler for user manage their jobs
      */
     public function pesanan() {
-        return view("seller.portfolio.pesanan");
+        $applications = Application::whereHas('service', function ($query) {
+            $query->where('user_id', Auth::user()->id);
+        })->get();
+        return view("seller.portfolio.pesanan", compact("applications"));
     }
 
 /**

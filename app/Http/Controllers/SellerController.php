@@ -44,4 +44,17 @@ class SellerController extends Controller
         })->get();
         return view('seller.portfolio', compact("applications"));
     }
+
+    public function profile(Request $request) {
+
+        $user = Auth::user();
+        $name = str_replace(' ', '+', $user->name);
+        $picture = "https://avatar.oxro.io/avatar.svg?name=" . $name
+            . "&background=ff6b6b&caps=3";
+        if($request->id){
+            $user = User::find($request->id);
+        }
+        
+        return view("seller.profile", compact(['user', 'picture']));
+    }
 }
