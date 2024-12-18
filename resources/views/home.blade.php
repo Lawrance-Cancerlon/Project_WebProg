@@ -19,7 +19,7 @@
 
     {{-- Baris kategori --}}
 
-    <div class="flex flex-col items-start gap-8">
+    <div class="flex flex-col justify-start p-8">
         <h2 class="text-4xl font-light" data-aos="fade-left" data-aos-delay="500">Cari talenta dari kategori</h2>
 
         <div class="relative w-full flex flex-row gap-8 snap-x snap-mkamutory overflow-x-auto py-4" style="-ms-overflow-style: none; scrollbar-width: none;">
@@ -48,8 +48,7 @@
 
     <div class="flex flex-col items-start gap-8 text-on-surface mb-8">
         <h2 class="text-4xl font-light" data-aos="fade-left" data-aos-delay="500">Sedang populer di Kartina.</h2>
-
-</div>
+    </div>
 
 </div>
 
@@ -74,7 +73,7 @@
                 </form>
         </div>
     </div>
-    <div class="flex items-center justify-center mb-64">
+    <div class="flex items-center justify-center mb-64 p-8">
         <div class="relative w-full flex flex-row gap-8 snap-x snap-mkamutory overflow-x-auto py-4" style="-ms-overflow-style: none; scrollbar-width: none;">
             <style>
             .scrollbar-hide::-webkit-scrollbar {
@@ -94,9 +93,9 @@
         @endforeach
         </div>
     </div>
-    <div class="flex flex-col items-center justify-center w-full mb-64">
+    <div class="flex flex-col items-center justify-center w-full mb-64 p-8">
             <span class="mb-12 text-6xl" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Wujudkan idemu bersama <img src="storage/assets/brand_logo.png" class="inline-block"/> </span>
-            <div class="py-12 flex flex-col gap-32 justify-center items-start" style="max-width: 72vw">
+            <div class="py-12 flex flex-col gap-24 justify-center items-start" style="max-width: 72vw">
 
                 <div
                 class="text-xl flex flex-row gap-12 justify-start items-start">
@@ -104,7 +103,7 @@
                         verified_user
                         </span>
                         <div class="flex flex-col gap-8 items-start">
-                            <h4 class="typewriter font-light text-6xl">Talenta dengan permit dan sertifikasi</h4>
+                            <h4 class="typewriter font-light text-4xl">Talenta dengan permit dan sertifikasi</h4>
                             <p class="text-justify text-4xl font-light" data-aos="fade-up" data-aos-id="typewriter" data-aos-anchor-placement="top-center">
                             </p>
                         </div>
@@ -118,7 +117,7 @@
                         payments
                         </span>
                         <div class="flex flex-col gap-8 items-start">
-                            <h4 class="typewriter font-light text-6xl">Bayar hanya jika kamu puas</h4>
+                            <h4 class="typewriter font-light text-4xl">Bayar hanya jika kamu puas</h4>
                             <p class="text-justify text-4xl font-light" data-aos="fade-up" data-aos-id="typewriter" data-aos-anchor-placement="top-center">
                             </p>
                         </div>
@@ -132,7 +131,7 @@
                         person_play
                         </span>
                         <div class="flex flex-col gap-8 items-start">
-                            <h4 class="typewriter font-light text-6xl">Simple, tidak pusing</h4>
+                            <h4 class="typewriter font-light text-4xl">Simple, tidak pusing</h4>
                             <p class="text-justify text-4xl font-light" data-aos="fade-up" data-aos-id="typewriter" data-aos-anchor-placement="top-center">
                                 </p>
                         </div>
@@ -144,7 +143,7 @@
             </div>
 
 
-                    <a href="/register" class="btn mt-8 flex"><span class="mx-12 my-8 text-4xl">Gabung Sekarang</span></a>
+                    <a href="/register" class="btn mt-8 flex"><span class="mx-6 my-4 text-xl">Gabung Sekarang</span></a>
 
             </div>
         </div>

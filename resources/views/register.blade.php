@@ -8,7 +8,8 @@
     <div class="flex flex-row items-start min-h-screen p-8 gap-8">
 
         <div data-aos="fade-up"
-        class="flex-1 text-4xl lg:text-8xl text-primary text-wrap">
+        class="text-4xl lg:text-8xl text-primary text-wrap"
+        style="flex: 1 1 50%">
             Daftar dan bergabung dengan jutaan <span class="relative inline-block h-[1em] overflow-hidden
             rounded-lg bg-secondary-container font-bold px-4">
                 <span id="sliding-words" class="block animate-slide-text text-on-secondary-container">
@@ -23,7 +24,7 @@
         </div>
 
         <div data-aos="fade-up" data-aos-delay="500" 
-        class="card w-full max-w-md justify-center bg-surface-container-low rounded-lg text-on-surface"
+        class="card justify-center bg-surface-container-low rounded-lg text-on-surface"
         style="flex: 1 1 50%">
             <div class="bg-white p-6">
                 <h1 class="text-2xl font-bold text-center">Daftar</h1>

@@ -10,11 +10,11 @@
     <div class="flex flex-row justify-center gap-8 mt-12 px-8">
 
 
-        <div class="flex flex-col justify-center gap-8" style="flex: 1 1 40%;">
+        <div class="flex flex-col justify-center items-center gap-8 px-12" style="flex: 1 1 40%;">
 
 
             <!-- Preview card -->
-            <div class="flex flex-row border border-outline-variant p-4 rounded items-center justify-start gap-4">
+            <div class="flex flex-row border w-full border-outline-variant p-4 rounded items-center justify-start gap-4">
                 <img class="rounded-full h-auto w-12 object-cover" src="{{ $picture }}" />
     
                 <div class="flex flex-col justify-start gap-2">
@@ -52,8 +52,7 @@
 
 
             <!-- Profile card -->
-            <div class="text-2xl font-bold">Profile Anda</div>
-            <div class="p-12 rounded-xl bg-surface flex flex-col items-center justify-center gap-4 text-on-surface">
+            <div class="border w-full border-outline-variant rounded-lg px-4 py-12 flex flex-col items-center justify-center gap-4 text-on-surface">
 
                 <div class="flex flex-col justify-center items-center gap-4">
                     <img class="rounded-full h-auto w-1/5 object-cover" src="{{ $picture }}" />

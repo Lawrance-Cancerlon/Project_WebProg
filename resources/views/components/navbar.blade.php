@@ -11,7 +11,7 @@
         @inject('page', 'App\Http\Controllers\PageController')
         @if(Auth::check())
 
-                <a href="/portfolio" class="nav-link {{ $page == 'portfolio' ? 'active' : '' }}">Portofolio</a>
+                <a href="/portfolio" class="nav-link {{ $page == 'portfolio' ? 'active' : '' }}">Pesanan</a>
 
                 <div class="group relative text-left">
                     <div class="flex gap-4 p-2 items-center border border-outline-variant rounded-full">

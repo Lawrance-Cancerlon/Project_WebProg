@@ -33,7 +33,17 @@
                 <div class="flex flex-col p-8 gap-4 items-start">
                     <h5 class="text-4xl text-on-surface font-bold">{{ $service->title }}</h5>
                     <h6 class="text-on-surface-variant text-md">{{ $service->category()->first()->name }}</h6>
-                    <p class="text-on-surface text-lg">{{ $service->description }}</p>
+                    <div class="py-2 px-2
+                            rounded-full bg-surface-container-high shadow
+                            text-on-surface mb-8 w-fit flex flex-row justify-start items-center">
+                           <img class="rounded-full h-auto w-8 object-cover" src="{{ "https://avatar.oxro.io/avatar.svg?name=" . $service->user()->first()->name
+            . "&background=ff6b6b&caps=3" }}" />
+        
+        
+                                <span class="px-4">{{ $service->user()->first()->name }}</span>
+                        
+                        </div>
+                    <p class="text-on-surface text-lg truncate max-w-[12rem]">{{ $service->description }}</p>
                     <p class="text-on-secondary font-semibold px-4 py-2 bg-secondary w-fit rounded">IDR {{ $service->salary }}</p>
                     <a href="/services?id={{ $service->id }}" class="btn w-full text-center">Lihat</a>
                 </div>

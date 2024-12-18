@@ -17,7 +17,7 @@ class UserController extends Controller
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:8|alpha_num',
             'confirm' => 'required|same:password',
-            'phone' => 'required|max:15',
+            'phone' => 'required|max:15|unique:users,phone',
         ]);
         
         User::create([
@@ -26,7 +26,9 @@ class UserController extends Controller
             'password' => Hash::make($request->input('password')),
             'phone' => $request->input('phone'),
         ]);
-        return redirect('/');
+
+        session()->flash("success", "success");
+        return redirect('/login');
     }
 
     public function login(Request $request)

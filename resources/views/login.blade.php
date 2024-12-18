@@ -27,8 +27,15 @@
 
     <div  data-aos="fade-up" data-aos-delay="200" 
     class="flex-1 card py-8 px-4 bg-surface-container-low text-on-surface">
+
+@session('success')
+    <div class="p-4 rounded flex bg-success text-on-error text-xl font-bold">
+        Yay! 🥳🎉🎉 kamu berhasil daftar! Yuk langsung login
+    </div>
+@endsession
+
         <div class="px-6 py-4">
-            <h1 class="text-2xl font-bold text-on-surface">Masuk</h1>
+            <h1 class="text-2xl font-bold text-on-surface text-center">Masuk</h1>
         </div>
         <div class="px-6 py-4">
             <form action="/login" method="POST">

@@ -22,17 +22,22 @@
                 <div class="bg-surface shadow-md rounded-lg overflow-hidden">
                     <div class="py-12 px-8">
                         <h5 class="text-lg text-on-surface font-semibold mb-4">{{ Service::find($application->service_id)->title }}</h5>
-                        <a href="profile?id={{ $application->service()->first()->user_id }}" class="py-2 px-2
-                            hover:bg-primary hover:text-on-primary rounded-full bg-primary-container
-                            text-on-primary-container mb-8 w-fit flex flex-row justify-start items-center">
+                        <div class="py-2 px-2
+                            rounded-full bg-surface-container-high shadow
+                            text-on-surface mb-8 w-fit flex flex-row justify-start items-center">
                             
-                           <img class="rounded-full h-auto w-12 object-cover" src="{{ PageController::getPicture($application->service()->first()->user()->first()->name) }}" />
+                           <img class="rounded-full h-auto w-8 object-cover" src="{{ PageController::getPicture($application->service()->first()->user()->first()->name) }}" />
         
         
                                 <span class="px-4">{{ $application->service()->first()->user()->first()->name }}</span>
                         
-                        </a>
-                        <p class="text-on-surface-variant">{{ $application->description }}</p>
+                        </div>
+                        <p class="text-on-surface-variant mb-4">{{ $application->description }}</p>
+
+                        <span class="flex flex-row justify-start items-center gap-4 p-4 rounded-lg bg-secondary-container text-on-secondary-container">
+                            <span class="material-symbols-outlined animate-spin-slow">webhook</span>
+                            <span class="text-mono">Sedang dikerjakan :D</span>
+                        </span>
                     </div>
                 </div>
             </div>
